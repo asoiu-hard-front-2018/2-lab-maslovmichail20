@@ -1,0 +1,38 @@
+{
+  "name": "2-lab-maslovmichail20",
+  "version": "1.0.0",
+  "description": "2 lab",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp",
+    "build": "NODE_ENV=production npm run gulp",
+    "build:win": "set NODE_ENV=production && npm run gulp",
+    "start": "npm run gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asoiu-hard-front-2018/2-lab-maslovmichail20.git"
+  },
+  "author": "Maslov M. <maslov.mikhail2000@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asoiu-hard-front-2018/2-lab-maslovmichail20/issues"
+  },
+  "homepage": "https://github.com/asoiu-hard-front-2018/2-lab-maslovmichail20#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  }
+}
