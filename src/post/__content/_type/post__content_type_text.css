@@ -1,0 +1,5 @@
+.post__content_type_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
