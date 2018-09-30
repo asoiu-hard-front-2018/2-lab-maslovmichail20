@@ -1,0 +1,6 @@
+.menu {
+    display: flex;
+    width: 385px;
+    flex-direction: column;
+    background: #181818;
+}

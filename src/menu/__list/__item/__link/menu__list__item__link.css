@@ -1,0 +1,7 @@
+.menu__list__item__link {
+    color: white;
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+}
