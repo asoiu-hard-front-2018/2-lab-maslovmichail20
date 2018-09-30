@@ -1,0 +1,7 @@
+.menu-button_hover-effect > div {
+    transition: background-color .3s ease;
+}
+
+.menu-button_hover-effect:hover > div {
+    background-color: #25f2b1;
+}

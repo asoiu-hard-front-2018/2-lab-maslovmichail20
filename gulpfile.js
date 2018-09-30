@@ -18,15 +18,15 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
 gulp.task('css', () => {
   return gulp.src('./src/**/*.css')
-    .pipe(gulp.src('./tmp/sprite.css'))
-    .pipe(gulpIf(isDev, sourcemaps.init()))
+    // .pipe(gulp.src('./tmp/sprite.css'))
+    // .pipe(gulpIf(isDev, sourcemaps.init()))
     .pipe(concat('index.css'))
     .pipe(gulpIf(!isDev, autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     })))
     .pipe(gulpIf(!isDev, cleanCSS({compatibility: 'ie10'})))
-    .pipe(gulpIf(isDev, sourcemaps.write()))
+    // .pipe(gulpIf(isDev, sourcemaps.write()))
     .pipe(gulp.dest('./public'));
 });
 
@@ -85,7 +85,7 @@ gulp.task('watch', () => {
   gulp.watch('./src/assets/svg/**/*.svg', gulp.series('assets:svg'));
   gulp.watch('./src/**/*.css', gulp.series('css'));
   gulp.watch('./src/**/*.js', gulp.series('js'));
-  gulp.watch('./**/*.html', gulp.series('assets:html'));
+  gulp.watch('./assets/index.html', gulp.series('assets:html'));
   gulp.watch('./src/assets/**/*.{png,jpg}', gulp.series('assets:pictures'));
 });
 

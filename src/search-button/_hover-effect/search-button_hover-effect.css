@@ -1,0 +1,7 @@
+.search-button_hover-effect:hover > span {
+    color: #25f2b1;
+}
+
+.search-button_hover-effect:hover > svg {
+    fill: #25f2b1;
+}

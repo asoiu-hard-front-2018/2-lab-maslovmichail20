@@ -1,0 +1,10 @@
+.header__caption {
+    margin-top: 1.8%;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    cursor: default;
+}

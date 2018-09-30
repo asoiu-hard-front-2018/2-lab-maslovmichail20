@@ -1,0 +1,7 @@
+.page_hover-effect_svg {
+    transition: fill .3s ease;
+}
+
+.page_hover-effect_svg:hover {
+    fill: #25f2b1;
+}
