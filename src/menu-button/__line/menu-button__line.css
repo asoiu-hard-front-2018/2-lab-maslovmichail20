@@ -1,6 +1,5 @@
 .menu-button__line {
     width: 23px;
     height: 2px;
-    background: black;
-    margin-bottom: 4px;
+    position: absolute;
 }

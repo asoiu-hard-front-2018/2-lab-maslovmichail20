@@ -1,0 +1,4 @@
+.menu-button__bottom-line {
+    bottom: 0;
+    transition: transform 0.6s 0.1s, background-color 0.3s ease, bottom 0.6s 0.1s;
+}
