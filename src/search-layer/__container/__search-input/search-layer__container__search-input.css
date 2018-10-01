@@ -1,0 +1,12 @@
+.search-layer__container__search-input {
+    width: 88%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+::placeholder {
+    color: black;
+}

@@ -1,0 +1,8 @@
+.search-layer__container__close-button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: -6px;
+}

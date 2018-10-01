@@ -1,0 +1,8 @@
+.search-layer__container__search-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}

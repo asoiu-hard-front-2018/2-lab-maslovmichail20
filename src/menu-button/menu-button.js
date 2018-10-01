@@ -36,12 +36,12 @@ var onClickHandler = {
       }
 
       topLine.style.top = '0';
-      topLine.style.transform = 'rotate(-180deg)';
+      topLine.style.transform = 'rotate(180deg)';
 
       centerLine.style.opacity = '1';
 
       bottomLine.style.bottom = '0';
-      bottomLine.style.transform = 'rotate(180deg)';
+      bottomLine.style.transform = 'rotate(-180deg)';
   }
 };
 
