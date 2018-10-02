@@ -10,10 +10,10 @@ var bottomLine = document.body.querySelector('.menu-button__bottom-line');
 
 var onClickHandler = {
   'close': function() {
-      menu.style.height = document.body.offsetHeight + 'px ';
-
       menu.style.left = '0';
       menuButton.style.left = '348px';
+      menuButton.style.position = 'fixed';
+
       for (var i = 0 ; i < 3 ; i++) {
           menuButtonLines[i].classList.remove('menu-button__line_menu_close');
           menuButtonLines[i].classList.add('menu-button__line_menu_open');
@@ -30,6 +30,8 @@ var onClickHandler = {
   'open': function () {
       menu.style.left = '-385px';
       menuButton.style.left = '6.7%';
+      menuButton.style.position = 'absolute';
+
       for (var i = 0 ; i < 3 ; i++) {
           menuButtonLines[i].classList.remove('menu-button__line_menu_open');
           menuButtonLines[i].classList.add('menu-button__line_menu_close');

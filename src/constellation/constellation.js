@@ -1,3 +1,8 @@
+(function() {
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    window.requestAnimationFrame = requestAnimationFrame;
+})();
 
 var canvas = document.querySelector('.constellation');
 
@@ -103,13 +108,21 @@ function Constellation(config) {
     this.ctx.strokeStyle = config.color;
     this.ctx.lineWidth = config.lineWidth;
 
-    this.stars = config.stars.map(function(coord) {
-        return new Star(config, coord[0]*config.width, coord[1]*config.height);
-    });
+    this.createStars = function(config) {
+        return config.stars.map(function(coord) {
+            return new Star(config, coord[0]*config.width, coord[1]*config.height);
+        });
+    };
 
-    this.lines = config.lines.map(function(stars) {
-        return new Line(self.stars[stars[0]], self.stars[stars[1]]);
-    });
+    this.stars = this.createStars(config);
+
+    this.createLines = function(config) {
+        return config.lines.map(function(stars) {
+            return new Line(self.stars[stars[0]], self.stars[stars[1]]);
+        });
+    };
+
+    this.lines = this.createLines(config);
 
     this.draw = function() {
         for (var i = 0 ; i < this.stars.length ; i++) {
@@ -137,9 +150,26 @@ function Constellation(config) {
 
             requestAnimationFrame(animate);
         });
+    };
+
+    this.onResize = function() {
+        config.width = canvas.offsetWidth;
+
+        self.canvas.width = config.width;
+        self.canvas.height = config.height;
+
+        self.ctx = self.canvas.getContext('2d');
+        self.ctx.fillStyle = config.color;
+        self.ctx.strokeStyle = config.color;
+        self.ctx.lineWidth = config.lineWidth;
+
+        self.stars = self.createStars(config);
+        self.lines = self.createLines(config);
     }
 }
 
 var c = new Constellation(config);
 c.draw();
 c.animate();
+
+window.addEventListener('resize', c.onResize);

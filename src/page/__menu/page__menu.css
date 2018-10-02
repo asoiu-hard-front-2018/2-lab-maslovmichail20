@@ -1,5 +1,5 @@
 .page__menu {
-    position: absolute;
+    position: fixed;
     left: -385px;
     top: 0;
 }

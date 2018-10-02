@@ -1,7 +1,7 @@
 .menu {
     display: flex;
     width: 385px;
-    height: auto;
+    height: 100%;
     flex-direction: column;
     background: #181818;
     transition: left 0.7s;
