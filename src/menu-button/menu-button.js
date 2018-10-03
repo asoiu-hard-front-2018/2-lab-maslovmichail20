@@ -76,4 +76,17 @@ function menuButtonOnClick() {
     menuState = menuState === 'close' ? 'open' : 'close';
 }
 
+function update() {
+    var state = menuState === 'close' ? 'open' : 'close';
+
+    if (document.body.offsetWidth < 990) {
+        menu.style.left = menuStyle.leftMobile[state];
+        menuButton.style.left = buttonStyle.leftMobile[state];
+    } else {
+        menu.style.left = menuStyle.leftDesktop[state];
+        menuButton.style.left = buttonStyle.leftDesktop[state];
+    }
+}
+
 menuButton.onclick = menuButtonOnClick;
+window.addEventListener('resize', update);

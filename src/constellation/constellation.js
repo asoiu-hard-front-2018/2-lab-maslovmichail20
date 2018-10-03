@@ -6,7 +6,7 @@
 
 var canvas = document.querySelector('.constellation');
 
-var config = {
+var desktopConfig = {
     canvas: canvas,
     width: canvas.offsetWidth,
     height: canvas.offsetHeight,
@@ -50,22 +50,58 @@ var config = {
     ],
     starSize: 4,
     lineWidth: 1,
-    color: 'rgba(200, 200, 200)'
+    speed: 5,
+    color: 'rgb(200, 200, 200)'
+};
+
+var mobileConfig = {
+    canvas: canvas,
+    width: canvas.offsetWidth,
+    height: canvas.offsetHeight,
+    stars: [
+        [0.07, 0.78],
+        [0.28, 0.5],
+        [0.17, 0.27],
+        [0.01, 0.33],
+        [0.4, 0.55],
+        [0.47, 0.83],
+        [0.53, 0.01],
+        [0.8, 0.4],
+        [0.9, 0.17],
+        [0.96, 0.67],
+        [0.87, 0.93]
+    ],
+    lines: [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [1, 4],
+        [4, 5],
+        [2, 6],
+        [6, 7],
+        [7, 8],
+        [7, 9],
+        [9, 10]
+    ],
+    starSize: 10,
+    lineWidth: 3,
+    speed: 3,
+    color: 'rgb(200, 200, 200, 0.6)'
 };
 
 function Star(config, x, y) {
     this.x = x;
     this.y = y;
 
-    this.dx = (0.5 - Math.random())/5;
-    this.dy = (0.5 - Math.random())/5;
+    this.dx = (0.5 - Math.random())/config.speed;
+    this.dy = (0.5 - Math.random())/config.speed    ;
 
     this.animate = function() {
-        if (this.x < 5 || this.x > config.width-5) {
+        if (this.x < 10 || this.x > config.width-10) {
             this.dx = -this.dx;
         }
 
-        if (this.y < 5 || this.y > config.height-5) {
+        if (this.y < 10 || this.y > config.height-10) {
             this.dy = -this.dy;
         }
 
@@ -153,6 +189,8 @@ function Constellation(config) {
     };
 
     this.onResize = function() {
+        config = document.body.offsetWidth > 990 ? desktopConfig : mobileConfig;
+        config = document.body.offsetWidth > 990 ? desktopConfig : mobileConfig;
         config.width = canvas.offsetWidth;
 
         self.canvas.width = config.width;
@@ -167,6 +205,8 @@ function Constellation(config) {
         self.lines = self.createLines(config);
     }
 }
+
+var config = document.body.offsetWidth > 990 ? desktopConfig : mobileConfig;
 
 var backgroundConstellation = new Constellation(config);
 backgroundConstellation.draw();
