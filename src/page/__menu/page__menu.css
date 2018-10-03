@@ -3,3 +3,9 @@
     left: -385px;
     top: 0;
 }
+
+@media screen and (max-width: 990px) {
+    .page__menu {
+        left: -820px;
+    }
+}

@@ -6,3 +6,9 @@
     background: #181818;
     transition: left 0.7s;
 }
+
+@media screen and (max-width: 990px) {
+    .menu {
+        width: 820px;
+    }
+}

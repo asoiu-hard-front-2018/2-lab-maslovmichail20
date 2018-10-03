@@ -1,3 +1,9 @@
 .menu__list__item {
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 990px) {
+    .menu__list__item {
+        margin-bottom: 65px;
+    }
+}

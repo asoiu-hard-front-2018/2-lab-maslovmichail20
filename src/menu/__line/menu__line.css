@@ -5,3 +5,10 @@
     margin-bottom: 7%;
     background: #a7a7a7;
 }
+
+@media screen and (max-width: 990px) {
+    .menu__line {
+        margin-left: 21%;
+        width: 520px;
+    }
+}
