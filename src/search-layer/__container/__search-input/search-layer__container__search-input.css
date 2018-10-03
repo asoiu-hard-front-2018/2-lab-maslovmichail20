@@ -10,3 +10,10 @@
 ::placeholder {
     color: black;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__container__search-input {
+        font-size: 60px;
+        width: 79%;
+    }
+}

@@ -6,3 +6,9 @@
     cursor: pointer;
     margin-bottom: -6px;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__container__close-button {
+        margin-right: 5px;
+    }
+}

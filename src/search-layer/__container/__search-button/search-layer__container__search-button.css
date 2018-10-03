@@ -6,3 +6,9 @@
     cursor: pointer;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__container__search-button {
+        margin-left: 5px;
+    }
+}

@@ -4,3 +4,10 @@
     font-size: 12px;
     margin-bottom: 3px;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__examples__item {
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+}

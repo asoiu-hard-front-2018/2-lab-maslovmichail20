@@ -3,3 +3,10 @@
     margin-top: 2.9%;
     margin-left: 1.5%;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__examples {
+        margin-top: 5.8%;
+        margin-left: 6%;
+    }
+}

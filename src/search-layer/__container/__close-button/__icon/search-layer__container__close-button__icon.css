@@ -3,3 +3,10 @@
     height: 19px;
     fill: #a7a7a7;
 }
+
+@media screen and (max-width: 990px) {
+    .search-layer__container__close-button__icon {
+        width: 45px;
+        height: 45px;
+    }
+}
