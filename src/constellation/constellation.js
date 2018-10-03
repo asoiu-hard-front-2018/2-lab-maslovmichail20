@@ -168,8 +168,8 @@ function Constellation(config) {
     }
 }
 
-var c = new Constellation(config);
-c.draw();
-c.animate();
+var backgroundConstellation = new Constellation(config);
+backgroundConstellation.draw();
+backgroundConstellation.animate();
 
-window.addEventListener('resize', c.onResize);
+window.addEventListener('resize', backgroundConstellation.onResize);

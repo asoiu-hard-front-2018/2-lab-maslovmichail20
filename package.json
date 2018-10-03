@@ -30,9 +30,7 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-svg-sprite": "^1.4.0",
     "gulp-uglify": "^3.0.1"
   }
 }
