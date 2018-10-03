@@ -5,3 +5,10 @@
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 990px) {
+    .post__content__caption {
+        font-size: 75px;
+        margin-top: 15px;
+    }
+}

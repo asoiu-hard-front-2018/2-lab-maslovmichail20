@@ -3,3 +3,9 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 990px) {
+    .post__content_type_text {
+        height: auto;
+    }
+}

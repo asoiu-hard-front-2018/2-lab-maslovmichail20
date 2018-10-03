@@ -2,3 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
+
+@media screen and (max-width: 990px) {
+    .post__content__hashtags {
+        font-size: 30px;
+    }
+}

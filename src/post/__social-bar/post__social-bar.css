@@ -1,3 +1,10 @@
 .post__social-bar {
     padding-top: 6px;
 }
+
+
+@media screen and (max-width: 990px) {
+    .post__social-bar {
+        padding-top: 30px;
+    }
+}

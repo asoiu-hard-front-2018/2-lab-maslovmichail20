@@ -2,3 +2,14 @@
     width: 280px;
     height: 435px;
 }
+
+@media screen and (max-width: 990px) {
+    .post {
+        width: 880px;
+        height: 1060px;
+    }
+
+    .post.post_text {
+        height: 500px;
+    }
+}

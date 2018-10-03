@@ -4,3 +4,10 @@
     color: #25f2b1;
     cursor: pointer;
 }
+
+@media screen and (max-width: 990px) {
+    .social-bar__comments {
+        font-size: 29px;
+        margin-left: 7px;
+    }
+}
