@@ -1,3 +1,9 @@
 .page__footer {
     padding: 4.3% 0;
 }
+
+@media screen and (max-width: 990px) {
+    .page__footer {
+        padding: 10% 0;
+    }
+}

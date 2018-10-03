@@ -1,3 +1,9 @@
 .footer__social-media {
     margin-bottom: 1.2%;
 }
+
+@media screen and (max-width: 990px) {
+    .footer__social-media {
+        margin-bottom: 7%;
+    }
+}

@@ -3,3 +3,9 @@
     margin: 1.9% auto 5%;
     padding: 1.6% 0;
 }
+
+@media screen and (max-width: 990px) {
+    .page__load-more {
+        margin: 5% auto 5%;
+    }
+}
