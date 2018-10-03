@@ -3,3 +3,10 @@
     top: 3.2%;
     right: 6.4%;
 }
+
+@media screen and (max-width: 990px) {
+    .page__search-button {
+        top: 2.1%;
+        right: 3.8%;
+    }
+}

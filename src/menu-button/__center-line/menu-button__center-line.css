@@ -3,3 +3,8 @@
     opacity: 1;
     transition: opacity 0.3s 0.1s, background-color 0.3s ease;
 }
+@media screen and (max-width: 990px) {
+    .menu-button__center-line {
+        top: 13px;
+    }
+}

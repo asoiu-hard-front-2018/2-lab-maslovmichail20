@@ -5,3 +5,12 @@
     font-size: 13px;
     color: #a7a7a7;
 }
+
+@media screen and (max-width: 990px) {
+    .header__description {
+        margin-top: 4.2%;
+        font-size: 32px;
+        padding: 1.1% 10%;
+        line-height: 58px;
+    }
+}

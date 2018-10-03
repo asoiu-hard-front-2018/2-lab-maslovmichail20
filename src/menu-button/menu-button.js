@@ -8,10 +8,21 @@ var topLine = document.body.querySelector('.menu-button__top-line');
 var centerLine = document.body.querySelector('.menu-button__center-line');
 var bottomLine = document.body.querySelector('.menu-button__bottom-line');
 
+var buttonStyle  = {
+    leftDesktop: {
+        close: '348px',
+        open: '6.7%'
+    },
+    leftMobile: {
+        close: '200px',
+        open: '5.1%'
+    }
+};
+
 var onClickHandler = {
-  'close': function() {
+  'close': function(buttonLeft) {
       menu.style.left = '0';
-      menuButton.style.left = '348px';
+      menuButton.style.left = buttonLeft.close;
       menuButton.style.position = 'fixed';
 
       for (var i = 0 ; i < 3 ; i++) {
@@ -27,9 +38,9 @@ var onClickHandler = {
       bottomLine.style.bottom = 'initial';
       bottomLine.style.transform = 'rotate(-225deg)';
   },
-  'open': function () {
+  'open': function (buttonLeft) {
       menu.style.left = '-385px';
-      menuButton.style.left = '6.7%';
+      menuButton.style.left = buttonLeft.open;
       menuButton.style.position = 'absolute';
 
       for (var i = 0 ; i < 3 ; i++) {
@@ -48,7 +59,8 @@ var onClickHandler = {
 };
 
 function menuButtonOnClick() {
-    onClickHandler[menuState]();
+    var buttonLeft = document.body.offsetWidth >= 990 ? buttonStyle.leftDesktop : buttonStyle.leftMobile;
+    onClickHandler[menuState](buttonLeft);
     menuState = menuState === 'close' ? 'open' : 'close';
 }
 

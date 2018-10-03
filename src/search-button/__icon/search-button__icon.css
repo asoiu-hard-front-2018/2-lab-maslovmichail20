@@ -1,3 +1,12 @@
 .search-button__icon {
+    width: 13px;
+    height: 13px;
     margin-right: 7px;
+}
+
+@media screen and (max-width: 990px) {
+    .search-button__icon {
+        width: 40px;
+        height: 40px;
+    }
 }

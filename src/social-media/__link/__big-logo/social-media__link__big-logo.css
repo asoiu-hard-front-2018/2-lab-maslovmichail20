@@ -1,0 +1,13 @@
+.social-media__link__big-logo {
+    width: 15px;
+    height: 15px;
+    fill: #a7a7a7;
+}
+
+@media screen and (max-width: 990px) {
+    .social-media__link__big-logo {
+        width: 60px;
+        height: 60px;
+        padding: 0 48px;
+    }
+}
