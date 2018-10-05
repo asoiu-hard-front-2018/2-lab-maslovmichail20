@@ -9,7 +9,7 @@ const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const gulpIf = require('gulp-if');
-
+const gcmq = require('gulp-group-css-media-queries');
 
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
@@ -24,6 +24,7 @@ gulp.task('css', () => {
     })))
     .pipe(gulpIf(!isDev, cleanCSS({compatibility: 'ie10'})))
     .pipe(gulpIf(isDev, sourcemaps.write()))
+    .pipe(gulpIf(!isDev, gcmq()))
     .pipe(gulp.dest('./public'));
 });
 
