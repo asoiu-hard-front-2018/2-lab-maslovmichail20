@@ -1,0 +1,10 @@
+.user-actions__action {
+    display: flex;
+    border-bottom: 1px solid #a7a7a7;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.user-actions__action:last-child {
+    border-bottom: none;
+}

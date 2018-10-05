@@ -1,0 +1,10 @@
+.prev-next-post__button__text {
+    font-family: 'Montserrat', sans-serif;
+    color: #25f2b1;
+    transition: color 0.3s ease;
+    font-size: 12px;
+}
+
+.prev-next-post__button__text:hover {
+    color: #a7a7a7;
+}

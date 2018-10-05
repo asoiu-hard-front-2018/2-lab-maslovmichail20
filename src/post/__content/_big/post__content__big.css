@@ -1,0 +1,4 @@
+.post__content_big {
+    display: flex;
+    flex-direction: column;
+}

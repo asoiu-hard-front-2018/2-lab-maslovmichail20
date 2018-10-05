@@ -1,0 +1,8 @@
+.embed-code__code-container__code {
+    white-space: normal;
+    word-break: break-all;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    color: #a7a7a7;
+    font-size: 11px;
+}
