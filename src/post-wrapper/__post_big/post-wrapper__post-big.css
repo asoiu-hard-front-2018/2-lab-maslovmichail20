@@ -1,3 +1,9 @@
 .post-wrapper__post_big {
     margin: 7% auto;
 }
+
+@media screen and (max-width: 990px) {
+    .post-wrapper__post_big {
+        margin-top: 4%;
+    }
+}

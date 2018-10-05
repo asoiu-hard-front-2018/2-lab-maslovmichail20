@@ -1,3 +1,9 @@
 .post_big {
     width: 79%;
 }
+
+@media screen and (max-width: 990px) {
+    .post_big {
+        width: 100%;
+    }
+}

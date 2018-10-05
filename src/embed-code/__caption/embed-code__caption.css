@@ -4,3 +4,9 @@
     font-weight: bold;
     cursor: default;
 }
+
+@media screen and (max-width: 990px) {
+    .embed-code__caption {
+        font-size: 24px;
+    }
+}

@@ -1,3 +1,9 @@
 .post-wrapper {
     width: 54.5%;
 }
+
+@media screen and (max-width: 990px) {
+    .post-wrapper {
+        width: 90%;
+    }
+}

@@ -8,3 +8,16 @@
 .prev-next-post__button__text:hover {
     color: #a7a7a7;
 }
+
+@media screen and (max-width: 990px) {
+    .prev-next-post__button__text {
+        font-size: 28px;
+        color: #a7a7a7;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .prev-next-post__button__text:hover {
+        color: #25f2b1;
+    }
+}

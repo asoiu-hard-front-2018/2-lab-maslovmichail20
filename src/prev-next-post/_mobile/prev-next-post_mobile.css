@@ -1,0 +1,10 @@
+.prev-next-post_mobile {
+    border-top: 1px solid #a7a7a7;
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .prev-next-post_mobile {
+        display: block;
+    }
+}

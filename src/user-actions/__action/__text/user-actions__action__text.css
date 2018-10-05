@@ -1,5 +1,10 @@
 .user-actions__action__text {
     font-family: 'Georgia', sans-serif;
     font-style: italic;
+}
 
+@media screen and (max-width: 990px) {
+    .user-actions__action__text {
+        font-size: 32px;
+    }
 }

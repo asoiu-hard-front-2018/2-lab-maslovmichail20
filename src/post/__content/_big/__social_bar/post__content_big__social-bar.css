@@ -1,3 +1,16 @@
 .post__content_big__social-bar {
     margin-top: 2.5%;
 }
+
+@media screen and (max-width: 990px) {
+    .post__content_big__social-bar {
+        margin-top: 4%;
+    }
+    .post__content_big__social-bar .social-bar__links__link__icon {
+        margin-top: -5px;
+    }
+    .post__content_big__social-bar .social-bar__date,
+    .post__content_big__social-bar .social-bar__comments {
+        font-size: 15px;
+    }
+}
