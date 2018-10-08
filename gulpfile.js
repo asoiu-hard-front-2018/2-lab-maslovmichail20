@@ -22,9 +22,9 @@ gulp.task('css', () => {
       browsers: ['last 2 versions'],
       cascade: false
     })))
+    .pipe(gulpIf(!isDev, gcmq()))
     .pipe(gulpIf(!isDev, cleanCSS({compatibility: 'ie10'})))
     .pipe(gulpIf(isDev, sourcemaps.write()))
-    .pipe(gulpIf(!isDev, gcmq()))
     .pipe(gulp.dest('./public'));
 });
 
